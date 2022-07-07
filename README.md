@@ -85,7 +85,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 - Meet the prerequisites.
-
+- 
 For Developers
 - Change config file
 
@@ -94,7 +94,11 @@ This is an example of how to list things you need to use the software and how to
 
 - .Net framework 4
 
+### Download
 
+### Download
+- Donwload from Releases [Download Launcher](https://github.com/JalalJaleh/Dynastio.Launcher/releases)
+- 
 <!-- CONTRIBUTING -->
 ## Contributing
 
