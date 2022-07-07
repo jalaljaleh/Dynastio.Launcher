@@ -27,60 +27,23 @@ namespace Launcher.Windows
             home = new Pages.Home();
             this.FrameMain.Content = home;
         }
-        public void ChangeVisibility(Visibility visibility)
-        {
-            this.Visibility = visibility;
-        }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed) this.DragMove();
         }
 
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-            this.FrameMain.Content = home;
-        }
+        private void BtnHome_Click(object sender, RoutedEventArgs e) => this.FrameMain.Content = home;
+        private void BtnSettings_Click(object sender, RoutedEventArgs e) => this.FrameMain.Content = new Pages.Settings();
+        private void BtnDynastioChangeLog_Click(object sender, RoutedEventArgs e) => this.FrameMain.Content = new Pages.ChangeLogPage();
+        private void BtnInfo_Click(object sender, RoutedEventArgs e) => this.FrameMain.Content = new Pages.InformationPage();
 
-        private void BtnSettings_Click(object sender, RoutedEventArgs e)
-        {
-            this.FrameMain.Content = new Pages.Settings();
-        }
 
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
+        private void BtnDiscord_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlDiscord);
+        private void BtnYoutube_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlYoutube);
+        private void BtnVk_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlVk);
+        private void BtnVersion_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlLauncherVersion);
 
-        private void BtnDynastioChangeLog_Click(object sender, RoutedEventArgs e)
-        {
-            this.FrameMain.Content = new Pages.ChangeLogPage();
+        private void BtnExit_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();
 
-        }
-
-        private void BtnDiscord_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start(App.Configuration.urlDiscord);
-        }
-
-        private void BtnYoutube_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start(App.Configuration.urlYoutube);
-        }
-
-        private void BtnVk_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start(App.Configuration.urlVk);
-
-        }
-
-        private void BtnInfo_Click(object sender, RoutedEventArgs e)
-        {
-          
-        }
-
-        private void BtnVersion_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start(App.Configuration.urlLauncherVersion);
-        }
     }
 }

@@ -15,13 +15,14 @@
 
         <Grid>
             <Label Content="Dynast.io Launcher" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" Width="211" FontWeight="Bold" FontSize="14"/>
-            <TextBlock Text="Version 0.1-beta" HorizontalAlignment="Left" Margin="29,39,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" Width="211" FontWeight="Normal" FontSize="11" Height="20"/>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="29,188,27,0">
+            <TextBlock Text="Version 0.1-beta" HorizontalAlignment="Left" Margin="29,68,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" Width="211" FontWeight="Normal" FontSize="11" Height="20"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="29,188,0,0" HorizontalAlignment="Left" Width="324">
                 <Button x:Name="BtnOpenSource" Content="Open-Source" Style="{StaticResource InfoButton}" Background="#FFD9804B" BorderBrush="#FFD9804B" Margin="5,5,2,5" Click="BtnOpenSource_Click" />
                 <Button x:Name="BtnItch" Content="Itch" Style="{StaticResource InfoButton}" Background="#FFD9584B" BorderBrush="#FFD9584B" Width="80" Margin="5,5,2,5" Click="BtnItch_Click"/>
                 <Button x:Name="BtnDiscord" Content="Discord" Style="{StaticResource InfoButton}" Background="#FF5662F6" BorderBrush="#FF4B56D9" Width="104" Margin="5,5,2,5" Click="BtnDiscord_Click"/>
 
             </StackPanel>
+            <TextBlock Text="Developer: @JalalJaleh" HorizontalAlignment="Left" Margin="29,45,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" Width="211" FontWeight="Normal" FontSize="11" Height="20"/>
 
         </Grid>
 

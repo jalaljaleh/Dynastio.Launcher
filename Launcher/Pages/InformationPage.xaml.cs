@@ -25,19 +25,16 @@ namespace Launcher.Pages
         {
             InitializeComponent();
         }
-
         private void BtnOpenSource_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://discord.gg/GVUXMNv7vV");
+            Process.Start("https://github.com/jalaljaleh/Dynastio.Launcher");
 
         }
-
         private void BtnItch_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://discord.gg/GVUXMNv7vV");
+            Process.Start("https://jaleh.itch.io/dynastio-launcher");
 
         }
-
         private void BtnDiscord_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("https://discord.gg/GVUXMNv7vV");

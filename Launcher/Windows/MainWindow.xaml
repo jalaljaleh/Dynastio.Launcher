@@ -39,12 +39,28 @@
                         <ImageBrush Stretch="Uniform" ImageSource="/Resource/left_build_icon.png"/>
                     </Button.Background>
                 </Button>
-                <Button x:Name="BtnDynastioChangeLog" Margin="40,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnDynastioChangeLog_Click" AutomationProperties.HelpText="Settings" >
+                <Button x:Name="BtnDynastioChangeLog" Margin="20,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnDynastioChangeLog_Click" AutomationProperties.HelpText="Settings" >
                     <Button.BorderBrush>
                         <SolidColorBrush Color="Black" Opacity="0.7"/>
                     </Button.BorderBrush>
                     <Button.Background>
                         <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_changelog.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnInfo" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnInfo_Click" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_privacy.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnYoutube" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnYoutube_Click" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_youtube.png"/>
                     </Button.Background>
                 </Button>
                 <Button x:Name="BtnDiscord" Margin="2,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnDiscord_Click" AutomationProperties.HelpText="Settings" >
@@ -63,27 +79,17 @@
                         <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_vk.png"/>
                     </Button.Background>
                 </Button>
-                <Button x:Name="BtnYoutube" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnYoutube_Click" >
-                    <Button.BorderBrush>
-                        <SolidColorBrush Color="Black" Opacity="0.7"/>
-                    </Button.BorderBrush>
-                    <Button.Background>
-                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_youtube.png"/>
-                    </Button.Background>
-                </Button>
-                <Button x:Name="BtnInfo" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnInfo_Click" >
-                    <Button.BorderBrush>
-                        <SolidColorBrush Color="Black" Opacity="0.7"/>
-                    </Button.BorderBrush>
-                    <Button.Background>
-                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_privacy.png"/>
-                    </Button.Background>
-                </Button>
+                
+               
 
             </WrapPanel>
         </Border>
         <Frame x:Name="FrameMain" Content="Dynast.io" NavigationUIVisibility="Hidden" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" />
-        <Button x:Name="BtnExit" Content="X" Style="{StaticResource CloseButton}" Click="BtnExit_Click" Foreground="White" BorderBrush="#FF6E0000" Height="24" Margin="0,0,0,1" RenderTransformOrigin="0.506,0.521" BorderThickness="1,1,1,1" Background="#FF9C0000" HorizontalAlignment="Right" Width="45" Padding="0,0,0,0"/>
+        <Button x:Name="BtnExit" Content="X" Style="{StaticResource CloseButton}" Click="BtnExit_Click" Foreground="White" BorderBrush="#FF8E7936" Height="24" Margin="0,0,0,1" RenderTransformOrigin="3.168,0.781" BorderThickness="1,1,1,1" HorizontalAlignment="Right" Width="45" Padding="0,0,0,0">
+            <Button.Background>
+                <SolidColorBrush Color="#FF9A843C" Opacity="0.7"/>
+            </Button.Background>
+        </Button>
         <Button x:Name="BtnVersion" Style="{StaticResource DefaultButton}" Content="0.1 Version" Foreground="White" Padding="0,0,0,0" FontSize="8" Click="BtnVersion_Click" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Stretch" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="45">
             <Button.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.01"/>

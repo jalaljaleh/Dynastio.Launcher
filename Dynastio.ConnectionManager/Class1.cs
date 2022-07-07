@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Launcher
+namespace Dynastio.ConnectionManager
 {
-    public class Version
+    public class Class1
     {
-        public string version { get; set; }
-        public string url { get; set; }
     }
 }

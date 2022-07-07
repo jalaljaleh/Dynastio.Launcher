@@ -1,4 +1,8 @@
 ﻿{
   "urlVersion": "https://dynast.io/version.json",
-  "urlChangeLog": "http://dynast.io/changelog.txt"
+  "urlChangeLog": "http://dynast.io/changelog.txt",
+  "urlDiscord": "https://discord.gg/GVUXMNv7vV ",
+  "urlYoutube": "https://www.youtube.com/channel/UCW0PmC1B8jjhpKLHciFp0xA/?sub_confirmation=1",
+  "urlVk": "https://vk.com/dynastio",
+  "urlLauncherVersion": "https://jaleh.itch.io/dynastio-launcher"
 }

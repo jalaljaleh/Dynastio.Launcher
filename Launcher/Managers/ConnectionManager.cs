@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Launcher
 {
 
-    internal class ConnectionManager
+    public class ConnectionManager
     {
         public static int FailedCount { get; set; } = 0;
         public static async Task<Version> GetVersionAsync(string url)
