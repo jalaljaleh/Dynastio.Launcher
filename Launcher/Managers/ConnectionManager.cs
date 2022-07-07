@@ -29,6 +29,7 @@ namespace Launcher
             catch
             {
                 FailedCount++;
+                if (FailedCount > 6) FailedCount = 0;
                 return null;
             }
         }
@@ -40,7 +41,7 @@ namespace Launcher
                 {
                     client.Timeout = TimeSpan.FromSeconds(30);
                     var result = await client.GetStringAsync(url);
-                   return result;
+                    return result;
                 }
             }
             catch

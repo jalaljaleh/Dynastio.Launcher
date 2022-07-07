@@ -30,7 +30,7 @@ namespace Launcher.Pages
             (sender as Button).IsEnabled = false;
             try
             {
-                Dynastio.DynastioSettings.ChangeSkinColor();
+                DynastioSettings.ChangeSkinColor();
                 (sender as Button).Content = "Skin Changed";
             }
             catch
@@ -46,7 +46,7 @@ namespace Launcher.Pages
             (sender as Button).IsEnabled = false;
             try
             {
-                Dynastio.DynastioSettings.DeleteDynastioRegistry();
+                DynastioSettings.DeleteDynastioRegistry();
                 (sender as Button).Content = "Settings Deleted";
             }
             catch
@@ -62,7 +62,7 @@ namespace Launcher.Pages
             (sender as Button).IsEnabled = false;
             try
             {
-                Dynastio.DynastioSettings.ChangeNickname(TbNickname.Text);
+                DynastioSettings.ChangeNickname(TbNickname.Text);
                 (sender as Button).Content = "Changeed";
                 await Task.Delay(500);
                 (sender as Button).Content = "Change";

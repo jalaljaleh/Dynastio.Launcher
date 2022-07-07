@@ -38,9 +38,7 @@ namespace Launcher.Windows
         private void BtnInfo_Click(object sender, RoutedEventArgs e) => this.FrameMain.Content = new Pages.InformationPage();
 
 
-        private void BtnDiscord_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlDiscord);
         private void BtnYoutube_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlYoutube);
-        private void BtnVk_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlVk);
         private void BtnVersion_Click(object sender, RoutedEventArgs e) => Process.Start(App.Configuration.urlLauncherVersion);
 
         private void BtnExit_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();

@@ -11,9 +11,7 @@ namespace Launcher
     {
         public string urlVersion { get; set; }
         public string urlChangeLog { get; set; }
-        public string urlDiscord { get; set; }
         public string urlYoutube { get; set; }
-        public string urlVk { get; set; }
         public string urlLauncherVersion { get; set; }
 
 
