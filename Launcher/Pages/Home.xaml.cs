@@ -139,7 +139,7 @@ namespace Launcher.Pages
             try
             {
                 this.BtnPlay.Content = "Installing...";
-                ZipFile.ExtractToDirectory(PathManager.DownloadGame, PathManager.Bin);
+                ZipFile.ExtractToDirectory(PathManager.DownloadGame, PathManager.Game);
                 this.BtnPlay.Content = "Dynast.io Installed";
                 Task.Delay(4000).GetAwaiter().GetResult();
             }
