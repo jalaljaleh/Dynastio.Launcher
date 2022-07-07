@@ -1,0 +1,98 @@
+﻿<Window x:Name="MainWindow1" x:Class="Launcher.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Launcher.Windows"
+        mc:Ignorable="d"
+        Title="Dynast.io" d:Height="400" d:Width="500" WindowStyle="None" BorderThickness="1,1,1,1" SizeToContent="Manual" WindowStartupLocation="CenterScreen" BorderBrush="#FF3C4731" MouseDown="Window_MouseDown" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" d:DesignHeight="423" d:DesignWidth="497.667" >
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition Height="43"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Resource/Preloader_background.png" Stretch="UniformToFill" Grid.RowSpan="3"/>
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Stretch" CornerRadius="10,10,0,0" MaxWidth="500" MaxHeight="60" Grid.Row="2">
+            <Border.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Border.Background>
+            <WrapPanel Orientation="Vertical" Margin="20,0,20,0">
+
+
+
+                <Button x:Name="BtnHome" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnHome_Click" AutomationProperties.HelpText="Home" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/left_shop_icon.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnSettings" Margin="2,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnSettings_Click" AutomationProperties.HelpText="Settings" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/left_build_icon.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnDynastioChangeLog" Margin="40,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnDynastioChangeLog_Click" AutomationProperties.HelpText="Settings" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_changelog.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnDiscord" Margin="2,0,0,0" Style="{StaticResource InfoButton}" Height="45" Width="45" Foreground="Black" Content="" Click="BtnDiscord_Click" AutomationProperties.HelpText="Settings" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_discord.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnVk" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnVk_Click" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_vk.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnYoutube" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnYoutube_Click" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_youtube.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="BtnInfo" Margin="2,0,0,0" Style="{StaticResource DangerButton}" Height="45" Width="45" Foreground="Black" Content=""  AutomationProperties.HelpText="Settings" Click="BtnInfo_Click" >
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="Black" Opacity="0.7"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Resource/mainmenu_small_privacy.png"/>
+                    </Button.Background>
+                </Button>
+
+            </WrapPanel>
+        </Border>
+        <Frame x:Name="FrameMain" Content="Dynast.io" NavigationUIVisibility="Hidden" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" />
+        <Button x:Name="BtnExit" Content="X" Style="{StaticResource CloseButton}" Click="BtnExit_Click" Foreground="White" BorderBrush="#FF6E0000" Height="24" Margin="0,0,0,1" RenderTransformOrigin="0.506,0.521" BorderThickness="1,1,1,1" Background="#FF9C0000" HorizontalAlignment="Right" Width="45" Padding="0,0,0,0"/>
+        <Button x:Name="BtnVersion" Style="{StaticResource DefaultButton}" Content="0.1 Version" Foreground="White" Padding="0,0,0,0" FontSize="8" Click="BtnVersion_Click" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Stretch" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="45">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.01"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.02"/>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</Window>
